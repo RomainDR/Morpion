@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-short morpionGrille[3][3] = { {0,0,0}, {0,0,0 }, {0,0,0} };
+short morpionGrille[3][3] = { {0,0,0}, {0,0,0 }};
 string player1, player2;
 char cross = 'X', circle = '0';
 bool player1Turn = true;
