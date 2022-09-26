@@ -1,12 +1,15 @@
 #include <iostream>
 using namespace std;
 
+#pragma region variables
 short morpionGrille[3][3] = { {0,0,0}, {0,0,0 }};
 string player1, player2;
 char cross = 'X', circle = '0';
 bool player1Turn = true;
 bool ended = false;
 int attempt = 0;
+
+#pragma endregion
 
 /// <summary>
 /// Method to check the symbol of array position (1 = X, 2 = O)
@@ -169,8 +172,8 @@ void Game()
     //change the player turn
     player1Turn = !player1Turn;
 
-    //reload the method for other player
-    while(!ended) Game();
+    //reload the method why an other player
+    if(!ended) Game();
 }
 
 int main()
